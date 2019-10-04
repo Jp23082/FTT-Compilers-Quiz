@@ -17,6 +17,24 @@ Linguagens interpretadas: Javascript, Lua, Python
 Linguagens compiladas: Cobol, Fortran, Java, C# e Pascal.__
 
 2) Quais são os prós e contras entre linguagens compiladas e interpretadas?
+__R: Compilador:
+Vantagens:
+      O Código copilado é mais rápido de ser acessado
+      Impossibilita ou pelo menos dificulta ser quebrado e visualizado o código-fonte original.
+      Permite otimização do corte pelo compilador.
+      Compila apenas se o código estiver sem erros.
+Desvantagens:
+      O código passa por diversos níveis de compilação
+      Processo de correção, necessita que o código seja copilado novamente.
+Interpretador:
+Vantagens:
+      Correções e alterações são mais rápidas de realizar.
+      Código não precisar ser compilado.
+      Consomem menos memória.
+Desvantagens:
+    • Execução é mais lenta do programa.
+    • Necessita sempre ter lido o código original para ser executado.
+      
 
 3) Qual a diferença entre assembler e assembly?
 
@@ -45,6 +63,8 @@ __R: Verifica os erros semânticos referentes ao escopo em que uma variável foi
 10) Quais as fases de compilação?
 
 __R: Análise e Síntese. (Sub-fases descritas na questão 16) ~Raquel Sales__
+
+__R: A compilação pode ser divida em 2 partes, são elas: a parte de Analise, na qual contém as fases de analise léxica, sintática e semântica e a parte de Síntese, onde encontra-se a geração de código intermediário, otimização e por fim a geração de código.
 
 11) Onde as linguagens de programação, regexp e os idiomas (inglês, português e francês) se encaixam na hierarquia de Chomsky?
 __R: Os idiomas estão contidos na categoria 0, recursivamente enumeraveis e identificados apenas pelo maquina de Turing. As linguagens de programação se encontram na categoria 2, reconhecidas por automatos finitos com pilha e o regexp se encontra na categoria 3 reconhecida por autômato finito, pois são as linguagens regulares.__
@@ -163,20 +183,20 @@ Exemplo: Javascript.__
 
 21) O que são linguagens fortemente tipadas e fracamente tipadas? Cite exemplos.
 __R:Linguagens fortemente tipadas são linguagens que exigem que na declaração da variável o seu tipo seja obrigatoriamente explicitado. Como por exemplo, na linguagem Java devemos escrever as variáveis da seguinte maneira:
-	int numero = 0;
-		String texto = “olá mundo”;
-	Boolean flag = true;
+        int numero = 0;
+                String texto = “olá mundo”;
+        Boolean flag = true;
 São exemplos de linguagens fortemente tipadas: Java, C#, C++, C, COBOL, Fortran.
 Já nas linguagens fracamente tipadas o programador não deve explicitar o tipo da variável pois a linguagem é capaz de identificar o tipo da variável de acordo com o valor que a variável assume em tempo de execução do programa. Nas linguagens com essa tipagem, uma variável pode alterar seu tipo quantas vezes forem necessárias, sempre de acordo com o valor que recebe. Abaixo um exemplo de como são declaradas as variáveis em Javascript, que é uma linguagem fracamente tipada.
 
-__R:|	x = 5
-	ou 
-	var x = 5|
+__R:|   x = 5
+        ou 
+        var x = 5|
 Neste caso, o programa assume que a variável x é do tipo int.
-	__R:|y = ”ola mundo”
-	ou
-	var y = “ola mundo”|
-	Neste caso o programa assume que a variável y é do tipo string.
+        __R:|y = ”ola mundo”
+        ou
+        var y = “ola mundo”|
+        Neste caso o programa assume que a variável y é do tipo string.
 São exemplos de linguagens fracamente tipadas: PHP, Javascript, Ruby, Python.
 
 22) O que é um bloco de código?
